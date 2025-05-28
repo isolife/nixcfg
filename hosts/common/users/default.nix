@@ -1,3 +1,3 @@
 {
-    imports = [.iso.nix];
+    imports = [./iso.nix];
 }
