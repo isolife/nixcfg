@@ -4,4 +4,10 @@
         ../common 
         ../features/cli
         ]; 
-        }
+
+        features = {
+            cli = {
+                fish.enable = true;
+            };
+        };
+}
