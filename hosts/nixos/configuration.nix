@@ -72,6 +72,15 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+
+  programs.hyprland = {
+    enable = true;
+    # You can configure Hyprland further here, for example:
+    settings.PermitRootLogin = "no";
+    allowSFTP = true;
+  };
+
+  programs.fish.enable = true; # Enable the Fish shell.
   #  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   #  nix.settings.trusted-users = ["root" "iso"];
 
