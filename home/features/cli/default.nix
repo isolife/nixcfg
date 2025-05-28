@@ -7,7 +7,7 @@
     };
 
 
-    programseza = {
+    programs.eza = {
         enable = true; # Enable eza
         enableFishIntegration = true; # Enable Fish shell integration
         enableBashIntegration = true; # Enable Bash shell integration
