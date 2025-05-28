@@ -8,7 +8,7 @@
     home-manager = {
       useUserPackages = true; # Use user packages
       extraSpecialArgs = {inherit inputs outputs;}; # Pass inputs and outputs to home-manager
-    }
+    };
   nixpkgs = {
     # You can add overlays here
     overlays = [
