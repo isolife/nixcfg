@@ -57,4 +57,5 @@
     nixPath = [ "/etc/nix/path" ];
   };
   users.defaultUserShell = pkgs.fish; # Default user shell
+  services.xserver.desktopManager.xfce.enableXfwm = true; # Enable XFCE window manager
 }
