@@ -76,8 +76,7 @@
   programs.hyprland = {
     enable = true;
     # You can configure Hyprland further here, for example:
-    settings.PermitRootLogin = "no";
-    allowSFTP = true;
+    xwayland.enable = true; # Enable XWayland support.
   };
 
   programs.fish.enable = true; # Enable the Fish shell.
