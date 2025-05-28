@@ -76,7 +76,7 @@
   programs.hyprland = {
     enable = true;
     # You can configure Hyprland further here, for example:
-    xwayland.enable = true; # Enable XWayland support.
+    # xwayland.enable = true; # Enable XWayland support.
   };
 
   programs.fish.enable = true; # Enable the Fish shell.
