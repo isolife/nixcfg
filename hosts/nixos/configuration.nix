@@ -73,14 +73,14 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
-  #programs.hyprland = {
-    #enable = true;
+  programs.hyprland = {
+    enable = true;
     # You can configure Hyprland further here, for example:
-    #xwayland.enable = true; # Enable XWayland support.
+    xwayland.enable = true; # Enable XWayland support.
   #};
 
   programs.fish.enable = true; # Enable the Fish shell.
-  programs.hyprland.enable = true; # Enable Hyprland window manager
+  # programs.hyprland.enable = true; # Enable Hyprland window manager
   #  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   #  nix.settings.trusted-users = ["root" "iso"];
 
