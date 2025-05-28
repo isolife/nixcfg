@@ -77,7 +77,7 @@
     enable = true;
     # You can configure Hyprland further here, for example:
     xwayland.enable = true; # Enable XWayland support.
-  #};
+  };
 
   programs.fish.enable = true; # Enable the Fish shell.
   # programs.hyprland.enable = true; # Enable Hyprland window manager
