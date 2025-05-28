@@ -57,6 +57,5 @@
     nixPath = [ "/etc/nix/path" ];
   };
   users.defaultUserShell = pkgs.fish; # Default user shell
-  programs.hyprland.enable = true; # Enable Hyprland window manager
   # services.xserver.desktopManager.xfce.enableXfwm = true; # Enable XFCE window manager
 }

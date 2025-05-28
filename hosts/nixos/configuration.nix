@@ -80,6 +80,7 @@
   #};
 
   programs.fish.enable = true; # Enable the Fish shell.
+  programs.hyprland.enable = true; # Enable Hyprland window manager
   #  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   #  nix.settings.trusted-users = ["root" "iso"];
 
