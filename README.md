@@ -1,6 +1,6 @@
 # nixcfg
 On nix:<br>
-`git status`<br>
+<pre> ```git status``` </pre>
 Check if on main<br>
-`git checkout main`<br>
-`git pul`<br>
+<pre> ```git checkout main``` </pre>
+<pre> ```git pul``` </pre>
