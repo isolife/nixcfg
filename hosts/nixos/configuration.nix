@@ -41,12 +41,12 @@
   console.keyMap = "no";
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.iso = {
-    isNormalUser = true;
-    description = "iso";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
-  };
+  # users.users.iso = {
+    # isNormalUser = true;
+    # description = "iso";
+    # extraGroups = [ "networkmanager" "wheel" ];
+    # packages = with pkgs; [];
+  #};
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
