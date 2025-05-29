@@ -21,7 +21,9 @@
       "qemu-libvirtd"
     ];
     openssh.authorizedKeys.keys = [
+      # GPC key?
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFValwqP4Dktx27I/TWRVbHE32jXq7oA4kOBg5fPYMvm vetle.olstad@gmail.com"
+      # WSL ssh key
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMVJGa9hb+wy1ClcmRCQWVD1dW6KJ1itq3uVh5LkLG4F vetle.olstad@gmail.com"
     ];
     packages = [inputs.home-manager.packages.${pkgs.system}.default];
