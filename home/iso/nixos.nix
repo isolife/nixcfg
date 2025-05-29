@@ -3,6 +3,7 @@
         ./home.nix 
         ../common 
         ../features/cli
+        ../features/desktop
         ]; 
 
         features = {
@@ -10,6 +11,9 @@
                 fish.enable = true;
                 fzf.enable = true;
                 neofetch.enable = true;
+            };
+            desktop = {
+                wayland.enable = true;
             };
         };
 }
