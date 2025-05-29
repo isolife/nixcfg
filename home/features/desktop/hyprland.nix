@@ -27,6 +27,7 @@ in {
           "XCURSOR_SIZE,32"
           "WLR_NO_HARDWARE_CURSORS,1"
           "GTK_THEME,Dracula"
+          "LIBGL_ALWAYS_SOFTWARE,1"
         ];
 
         input = {
@@ -130,12 +131,12 @@ in {
 
         bind = [
           "$mainMod, return, exec, kitty -e zellij-ps"
-          "$mainMod, t, exec, kitty -e fish -c 'neofetch; exec fish'"
+          "$mainMod, T, exec, kitty -e fish -c 'neofetch; exec fish'"
           "$mainMod SHIFT, e, exec, kitty -e zellij_nvim"
-          "$mainMod, o, exec, thunar"
+          "$mainMod, O, exec, thunar"
           "$mainMod, Escape, exec, wlogout -p layer-shell"
           "$mainMod, Space, togglefloating"
-          "$mainMod, q, killactive"
+          "$mainMod, Q, killactive"
           "$mainMod, M, exit"
           "$mainMod, F, fullscreen"
           "$mainMod, V, togglefloating"
