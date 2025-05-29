@@ -14,6 +14,7 @@
       neofetch.enable = true;
     };
     desktop = {
+      fonts.enable = true;
       hyprland.enable = true;
       wayland.enable = true;
     };
