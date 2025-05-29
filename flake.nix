@@ -17,9 +17,20 @@
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
+
+    dotfiles = {
+      url = "git+https://github.com/isolife/Dotfiles.git";
+      flake = false;
+    };
   };
 
-  outputs = { self, home-manager, nixpkgs, ... }@inputs:
+  outputs = { 
+    self, 
+    dotfiles, 
+    home-manager, 
+    nixpkgs, 
+    ... 
+    }@inputs:
     let
       inherit (self) outputs;
       systems = [
