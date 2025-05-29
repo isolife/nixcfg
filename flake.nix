@@ -18,6 +18,11 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
 
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     dotfiles = {
       url = "git+https://github.com/isolife/Dotfiles.git";
       flake = false;
@@ -26,6 +31,7 @@
 
   outputs = { 
     self, 
+    disko,
     dotfiles, 
     home-manager, 
     nixpkgs, 
@@ -48,7 +54,10 @@
       nixosConfigurations = {
         nixos = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
-          modules = [ ./hosts/nixos ];
+          modules = [ 
+            ./hosts/nixos
+            inputs.disko.nixosModules.disko
+             ];
         };
       };
       homeConfigurations = {

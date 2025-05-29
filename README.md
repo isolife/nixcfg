@@ -5,4 +5,3 @@ Check if on main<br>
 <pre> ```git checkout main``` </pre>
 <pre> ```git pul``` </pre>
 <pre>sudo nixos-rebuild switch --flake .#nixos</pre>
-test
