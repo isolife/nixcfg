@@ -10,8 +10,6 @@ in {
     options.features.cli.neofetch.enable = mkEnableOption "enable neofetch CLI tool";
 
     config = mkIf cfg.enable {
-        home.packages = with pkgs; [
-            neofetch
-        ];
+        home.packages = with pkgs; [neofetch];
         };
-    };
+    }
