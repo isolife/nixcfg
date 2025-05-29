@@ -18,6 +18,8 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
 
+    agenix.url = "github:ryantm/agenix";
+
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -30,7 +32,8 @@
   };
 
   outputs = { 
-    self, 
+    self,
+    agenix, 
     disko,
     dotfiles, 
     home-manager, 
@@ -57,6 +60,7 @@
           modules = [ 
             ./hosts/nixos
             #inputs.disko.nixosModules.disko
+            agenix.nixosModules.default
              ];
         };
       };
