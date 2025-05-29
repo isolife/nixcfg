@@ -56,7 +56,7 @@
           specialArgs = { inherit inputs outputs; };
           modules = [ 
             ./hosts/nixos
-            inputs.disko.nixosModules.disko
+            #inputs.disko.nixosModules.disko
              ];
         };
       };
