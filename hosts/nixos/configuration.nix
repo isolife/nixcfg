@@ -12,11 +12,11 @@
     ];
 
   # Bootloader.
-  #boot.loader.grub.enable = true;
-  #boot.loader.grub.device = "/dev/sda";
-  #boot.loader.grub.useOSProber = true;
-  boot.loader.systemd-boot.enable = true; # Use systemd-boot as the bootloader.
-  boot.loader.efi.canTouchEfiVariables = true; # Allow systemd-boot to modify EFI variables.
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "/dev/sda";
+  boot.loader.grub.useOSProber = true;
+  #boot.loader.systemd-boot.enable = true; # Use systemd-boot as the bootloader.
+  #boot.loader.efi.canTouchEfiVariables = true; # Allow systemd-boot to modify EFI variables.
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
